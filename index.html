@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/oldstyle.css" />
     <title>Document</title>
   </head>
   <body>
@@ -17,21 +18,96 @@
         ></label>
         <ul class="menu">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about-me">About</a></li>
           <li><a href="#work">Portfolio</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li>
+            <a
+              aria-label="Open Andrew's resume in a new tab"
+              href="https://docs.google.com/document/d/1boDIJrovgxAkUmuxmyzeHcmqn7CylGAjJaVHVe7V8LI/edit?usp=sharing"
+              >Resume</a
+            >
+          </li>
+          <li><a href="#contact-me">Contact</a></li>
         </ul>
       </div>
     </header>
     <main>
-      <div>
-        <p>
-          Hello, I'm <span>Zahra Seyedi</span>.<br />
-          I'm a full-stack web developer.
-        </p>
-      </div>
-      <div class="btn-page-link">View my work</div>
+      <section id="home" class="flex">
+        <div class="flex">
+          <div class="text">
+            <p>
+              Hello, I'm <span class="highlight">Zahra Seyedi</span>.<br />
+              I'm a full-stack web developer.
+            </p>
+          </div>
+          <div class="btn-page-link">
+            <a
+              style="
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+              "
+              href="#about-me"
+              >View my work</a
+            >
+          </div>
+        </div>
+      </section>
+      <article>
+        <section id="about-me" class="grid-container-about-me">
+          <div class="item1">
+            <div class="verticalLine"></div>
+            <h2>About Me</h2>
+          </div>
+          <div class="item2"><p>Hi, I am Zahra</p></div>
+        </section>
+
+        <section id="work" class="grid-container-work">
+          <div class="item3">
+            <h2>Work</h2>
+            <div class="verticalLine"></div>
+          </div>
+          <div class="item4">
+            <img src="./assets/img/freevectorJan17.jpg" alt="vector leaf" />
+          </div>
+          <div class="container">
+            <img src="./assets/img/image1.jpg" alt="butterfly" class="images" />
+          </div>
+          <div class="container">
+            <img
+              src="./assets/img/images.jpg"
+              alt="Narcissus poeticus, Flower"
+              class="images"
+            />
+          </div>
+          <div class="container">
+            <img src="./assets/img/image3.jpg" alt="Ghasedak" class="images" />
+          </div>
+          <div class="container">
+            <img
+              src="./assets/img/marguerite-1372118.jpg"
+              alt="Marguerite, Daisy, Flower"
+              class="images"
+            />
+          </div>
+        </section>
+      </article>
+
+      <footer id="contact-me" class="grid-container-about-me">
+        <div class="item1">
+          <div class="verticalLine"></div>
+          <h2>Conntact Me</h2>
+        </div>
+        <div class="item2">
+          <nav>
+            <a href="tel:+1123-456-7890">Phone</a>
+            <a href="mailto:za.seyedi@gmail.com">Email</a>
+            <a href="https://linkedin.com/in/zahra-seyedi-2020">Linkedin</a>
+            <a href="https://github.com/zahra315">Github</a>
+          </nav>
+        </div>
+      </footer>
     </main>
     <script src="./assets/js/script.js"></script>
   </body>
