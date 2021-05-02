@@ -191,7 +191,7 @@ a {
   padding: 45% 25%; */
   width: 100%;
   height: 100%;
-  margin: 25px 0 75px 0;
+  margin: auto;
   background-color: #fdfffc;
 }
 
@@ -199,27 +199,12 @@ a {
   color: #343a40;
 }
 
-.card {
-  margin-bottom: 60px;
-  position: relative;
-  overflow: hidden;
-  margin: 0.5rem 0 1rem 0;
-  box-sizing: border-box;
-  border-radius: 2px;
-  background-clip: padding-box;
-}
-
-.car-content {
-  padding-bottom: 30px;
-  padding: 20px;
-  border-radius: 0 0 2px 2px;
-}
-
 footer a {
   float: left;
   text-align: center;
   text-decoration: none;
   padding: 14px 16px;
+  margin: auto;
 }
 
 .home {
@@ -242,7 +227,6 @@ footer a {
   display: flex;
   flex-direction: row;
   font-size: 30px;
-  text-align: center;
 }
 
 .flex-item-left {
