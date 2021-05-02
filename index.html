@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/oldstyle.css" />
     <title>Document</title>
   </head>
   <body>
@@ -32,9 +31,9 @@
       </div>
     </header>
     <main>
-      <!-- HOMEK -->
+      <!-- HOME -->
       <section id="home" class="flex">
-        <div class="flex">
+        <div class="flex home">
           <div class="text">
             <p>
               Hello, I'm <span class="highlight">Zahra Seyedi</span>.<br />
@@ -48,37 +47,85 @@
       </section>
       <article>
         <!-- ABOUT-ME -->
-        <section id="about-me">
+        <section id="about-me" class="flex">
           <div class="container flex">
-            <img src="./assets/img/2021-03-19.jpg" />
             <div>
-              <h2>
-                I make things<br />
-                that make a difference.
-              </h2>
-            </div>
-          </div>
-        </section>
-        <!-- WORK -->
-        <section id="work">
-          <div class="container flex">
-            <div class="card">
-              <div class="car-content" style="border: 5px solid black">
-                Coming Soon!
+              <img src="./assets/img/2021-03-19.jpg" class="selfy" />
+              <div>
+                <h2>
+                  I make things<br />
+                  that make a difference.
+                </h2>
               </div>
             </div>
           </div>
         </section>
+        <!-- WORK -->
+        <section id="work" class="flex">
+          <div class="container flex">
+            <div class="flex-container">
+              <div class="flex-item-left item">
+                <img
+                  src="./assets/img/Word Party.png"
+                  alt="Word Party app"
+                  class="image"
+                />
+                <div class="overlay">
+                  <a
+                    href="https://ericrudeen.github.io/word-party"
+                    class="appName"
+                    >Word Party Dictionary</a
+                  >
+                </div>
+              </div>
+              <div class="flex-item-right item">
+                <img
+                  src="./assets/img/dayplanner.jpg"
+                  alt="day planner app"
+                  class="image"
+                />
+                <div class="overlay">
+                  <a
+                    href="https://zahra315.github.io/time-block-planner"
+                    class="appName"
+                    >Day Planner</a
+                  >
+                </div>
+              </div>
+              <div class="flex-item-right item">
+                <img
+                  src="./assets/img/weatherapp.jpg"
+                  alt="weather dashboard app"
+                  class="image"
+                />
+                <div class="overlay">
+                  <a
+                    href="https://zahra315.github.io/weather-app"
+                    class="appName"
+                    >Weather Dashboard</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- <div>
+              <ul>
+                <li><a href="https://ericrudeen.github.io/word-party/"></a></li>
+                <li><a href="https://zahra315.github.io/weather-app/"></a></li>
+                <li><a href="https://zahra315.github.io/time-block-planner/"></a></li>
+              </ul>
+            </div> -->
+          </div>
+        </section>
       </article>
-
-      <footer id="contact-me" class="container flex">
-        <div class="row">
+      <!-- CONTACT -->
+      <footer id="contact-me" class="flex">
+        <div class="footer flex" style="display: inline">
           <a href="tel:+1123-456-7890">Phone</a>
           <a href="mailto:za.seyedi@gmail.com">Email</a>
           <a href="https://linkedin.com/in/zahra-seyedi-2020">Linkedin</a>
           <a href="https://github.com/zahra315">Github</a>
         </div>
-        <div>
+        <div class="web-dev">
           <p>ZAHRA SEYEDI <span class="highlight">©2021</span></p>
         </div>
       </footer>

@@ -186,9 +186,9 @@ a {
 }
 
 .container {
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   max-width: 1200px;
-  padding: 45% 25%;
+  padding: 45% 25%; */
   width: 100%;
   height: 100%;
   margin: 25px 0 75px 0;
@@ -215,15 +215,100 @@ a {
   border-radius: 0 0 2px 2px;
 }
 
-.row a {
-  flex-direction: row;
-  color: #000;
-  word-break: break-all;
-}
-
 footer a {
   float: left;
   text-align: center;
   text-decoration: none;
   padding: 14px 16px;
+}
+
+.home {
+  background-color: #011627;
+  width: 100%;
+  height: 100%;
+  margin: 25px 0 75px 0;
+}
+
+.footer a:hover {
+  color: #e71d36;
+}
+
+.web-dev {
+  color: #fdfffc;
+  font-size: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #fdfffc;
+  padding: 10px;
+  flex: 50%;
+  align-self: center;
+}
+
+.flex-item-right {
+  background-color: #fdfffc;
+  padding: 10px;
+  flex: 50%;
+  align-self: center;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.appName {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 20pt;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #2ec4b6;
+}
+
+.item {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.selfy {
+  border-radius: 25px;
 }
